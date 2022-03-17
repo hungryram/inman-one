@@ -24,3 +24,7 @@ body .uk-heading-xlarge {
     position: fixed;
     width: 100%;
 }
+
+canvas {
+    max-width: 100%;
+}
