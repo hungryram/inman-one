@@ -1,0 +1,26 @@
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .uk-h1,
+body .uk-h2, 
+body .uk-h3, 
+body .uk-h4, 
+body .uk-h5, 
+body .uk-h6, 
+body .uk-heading-2xlarge, 
+body .uk-heading-large, 
+body .uk-heading-medium, 
+body .uk-heading-small, 
+body .uk-heading-xlarge {
+    font-family: "Montserrat", sans-serif!important;
+    line-height: 1.5;
+}
+
+
+.main-content {
+    position: fixed;
+    width: 100%;
+}
