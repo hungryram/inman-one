@@ -28,7 +28,28 @@
                         <h1 class="uk-heading-medium">
                             Become a Serhant Agent
                         </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam perferendis aliquam nobis quia in accusamus magni ab. Quod, repellat soluta? Eaque esse animi ducimus veritatis, assumenda quisquam itaque dolorem quod!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam</p>
+                        <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
+                            <input name="bot-field" type="hidden" />
+                            <input type="hidden" name="Subject" value="Website Contact Form">
+                            <input name="Source" type="hidden" value="{{ .Permalink }}" />
+                        
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Name" name="Name">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Phone" name="Phone">
+                            </div>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input" type="text" placeholder="Email" name="Email">
+                            </div>
+                            <div class="uk-width-1-1">
+                                <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="Message"></textarea>
+                            </div>
+                            <div class="uk-width-1-1">
+                                <button class="uk-button uk-button-primary">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
