@@ -1,0 +1,8 @@
+{{ partial "global/head" . }}
+{{ $buttonColor := $.Site.Data.appearance.colors }}
+<main>
+{{ block "main" . }}
+
+{{ end }}
+</main>
+{{ partial "global/footer" . }}

@@ -1,64 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/css/uikit.min.css" />
-
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.1/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <div class="main-content">
-        <div class="uk-section uk-height-viewport">
-            <div class="uk-container uk-light">
-                <div class="uk-text-center uk-flex uk-flex-center uk-margin-xlarge-top">
-                    <div class="uk-width-2xlarge">
-                        <h1 class="uk-heading-medium">
-                            Become a Serhant Agent
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam</p>
-                        <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
-                            <input name="bot-field" type="hidden" />
-                            <input type="hidden" name="Subject" value="Website Contact Form">
-                            <input name="Source" type="hidden" value="{{ .Permalink }}" />
-                        
-                            <div class="uk-width-1-2@s">
-                                <input class="uk-input" type="text" placeholder="Name" name="Name">
-                            </div>
-                            <div class="uk-width-1-2@s">
-                                <input class="uk-input" type="text" placeholder="Phone" name="Phone">
-                            </div>
-                            <div class="uk-width-1-1">
-                                <input class="uk-input" type="text" placeholder="Email" name="Email">
-                            </div>
-                            <div class="uk-width-1-1">
-                                <textarea class="uk-textarea" rows="5" placeholder="Your Message" name="Message"></textarea>
-                            </div>
-                            <div class="uk-width-1-1">
-                                <button class="uk-button uk-button-primary">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+{{ partial "global/head" . }}
+    <main>
+        <div class="uk-height-viewport">
+            <div class="uk-position-center">
+                <div class="gradient-card">
+                    <img src="../uploads/white-new.png" alt="" width="190">
+                </div>
+                <div class="uk-position-absolute text-inner uk-light">
+                    <h1>Become a Serhant Agent</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium nihil ipsa quidem illo</p>
                 </div>
             </div>
+            <div class="uk-position-bottom uk-padding uk-text-center">
+                <a href="" class="uk-button uk-button-primary">Sign up</a>
+            </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
-        integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../js/3d.js"></script>
-</body>
-
-</html>
+    </main>
+{{ partial "global/footer" . }}
