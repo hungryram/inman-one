@@ -1,20 +1,25 @@
 {{ partial "global/head" . }}
-    <main id="swup" class="transition-fade">
-        <div class="uk-height-viewport">
-            <div class="uk-position-center">
-                <div class="gradient-card">
-                    <div>
-                        <img src="../uploads/white-new.png" alt="" width="190" class="custom-right">
+<div>
+    <div class="uk-child-width-1-1 uk-light">
+        <div>
+            <div class="uk-background-top-left uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-middle uk-flex-center">
+                <div class="uk-card uk-card-default uk-card-body uk-width-large" uk-height-viewport="offset-bottom: 30">
+                    <div class="uk-position-top-right">
+                        <img src="../uploads/white-new.png" alt="" width="200" style="transform:translateY(-20px)">
+                    </div>
+                    <div class="uk-position-bottom-left">
+                        <div class="uk-width-medium uk-light" style="transform:translateX(-20px)">
+                            <h1 class="uk-text-bold">Become a Serhant Agent</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, minima.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="uk-position-absolute text-inner uk-light">
-                    <h1>Become a Serhant Agent</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium nihil ipsa quidem illo</p>
+                <div class="uk-position-bottom uk-padding uk-text-center">
+                    <a href="/signup" class="uk-button uk-button-primary">Sign up</a>
+
                 </div>
             </div>
-            <div class="uk-position-bottom uk-padding uk-text-center">
-                <a href="/signup" class="uk-button uk-button-primary"><span>Sign up</span></a>
-            </div>
         </div>
-    </main>
+    </div>
+</div>
 {{ partial "global/footer" . }}
