@@ -19,7 +19,7 @@ body .uk-heading-xlarge {
 }
 
 body {
-  background: black;
+  background: #090e19;
 }
 
 div.uk-card-default {
@@ -31,12 +31,17 @@ div.uk-card-default {
 }
 
 .uk-button.uk-button-primary {
-  border-radius: 50px;
+  border-radius: 20px;
   font-weight: 600;
   color: #fff;
+  padding: 10px 30px;
 }
 
-
+div hr {
+  border-top: 1px solid #696969;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 
 .gradient-card img {
