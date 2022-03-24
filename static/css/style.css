@@ -30,6 +30,10 @@ div.uk-card-default {
 
 }
 
+div.uk-card-secondary {
+  border-radius: 20px;
+}
+
 .uk-button.uk-button-primary {
   border-radius: 20px;
   font-weight: 600;
@@ -100,4 +104,48 @@ div.inner-logo img {
 
 html.is-animating .transition-fade {
   opacity: 0;
+}
+
+
+
+
+
+
+
+.scroll-down {
+  position: absolute;
+  bottom: -10%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  z-index: 1000;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation:    fade_move_down 2s ease-in-out infinite;
+  animation:         fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
