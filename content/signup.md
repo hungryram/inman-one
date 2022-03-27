@@ -1,4 +1,0 @@
-+++
-title = "Signup"
-layout = "signup"
-+++
