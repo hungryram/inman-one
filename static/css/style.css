@@ -19,7 +19,7 @@ body .uk-heading-xlarge {
 }
 
 body {
-  background: #090e19;
+  background: #060b11;
 }
 
 div.uk-card-default {
@@ -168,4 +168,71 @@ div.glow {
     margin: 0 auto;
     z-index: -1;
     bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.word-rotate__words {
+}
+.word-rotate__words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  color: #6b969d;
+  -webkit-animation: rotateWord 6s linear;
+}
+.word-rotate__words span:nth-child(2) {
+  -webkit-animation-delay: 1s;
+  color: #6b889d;
+}
+.word-rotate__words span:nth-child(3) {
+  -webkit-animation-delay: 2s;
+  color: #6b739d;
+}
+
+.word-rotate__words span:nth-child(4) {
+  -webkit-animation-delay: 3s;
+  color: #6b739d;
+}
+
+.word-rotate__words span:nth-child(5) {
+  -webkit-animation-delay: 4s;
+  color: #6b739d;
+}
+
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
